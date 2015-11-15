@@ -1,13 +1,15 @@
 //context
-var canvas = document.querySelector("#canvas");
+var canvas = document.querySelector("#canvas", {stencil: true});
+canvas.width = 853;
+canvas.height = 480;
+// canvas.width = 512;
+// canvas.height = 512;
+
 var gl = canvas.getContext("webgl");
 var viewportWidth = canvas.width;
 var viewportHeight = canvas.height;
-
-//light source
-var lightX = 0;
-var lightY = 40;
-var lightZ = 2;
+var shadowViewPortWidth = 512;
+var shadowViewPortHeight = 512;
 
 //matrices used by normal rendering
 //static
@@ -17,15 +19,21 @@ var VPMatrix = mat4.create();
 //todo: calculate wall's MVP matrix and normal matrix as wall is never gonna move
 //var identityMatrix = mat4.create();
 
-mat4.perspective(projectionMatrix, Math.PI * 0.25, viewportWidth / viewportHeight, 1, 100.0);
-mat4.lookAt(viewMatrix, [0, 7, 9], [0, 0, 0], [0, 1, 0]);
+// main camera
+// opengl -45.086  -10.548  131.721  -> -29.134   -6.732  -24.9
+// fov 31.834
+// near clip 41.145
+// far clip 394.625
+mat4.perspective(projectionMatrix, 0.5556, viewportWidth / viewportHeight, 41.145, 394.625);
+mat4.lookAt(viewMatrix, [-45.086, -10.548, 131.721], [-29.134, -6.732, -24.9], [0, 1, 0]);
 mat4.multiply(VPMatrix, projectionMatrix, viewMatrix);
 
 //change in each frame
 var m_modelMatrix = mat4.create();
-//todo: the following rotates is for test only ,remove it later.
-mat4.rotateZ(m_modelMatrix, m_modelMatrix, 0.3);
-mat4.rotateY(m_modelMatrix, m_modelMatrix, -0.3);
+// mat4.rotateX(m_modelMatrix, m_modelMatrix, 0.2);
+// mat4.rotateY(m_modelMatrix, m_modelMatrix, 0.6);
+// mat4.rotateZ(m_modelMatrix, m_modelMatrix, 0.3);
+
 var MVPMatrix = mat4.create();
 var MVMatrix = mat4.create();
 var normalMatrix = mat3.create();
@@ -35,14 +43,28 @@ var shadowProjectionMatrix = mat4.create();
 var shadowViewMatrix = mat4.create();
 var shadowVPMatrix = mat4.create();
 
+// var shadow
+
+// 用来投射阴影的暖光
+// 83.064 / 1.99 / 173.467 -> 0 0 0
+// 用来绘制投影的镜头的位置也是同上
+// fov 20.833
+// near clip 120.255
+// far clip 319.287
+
 //static 
-mat4.perspective(shadowProjectionMatrix, Math.PI * 0.4, viewportWidth / viewportHeight, 1, 200.0);
+mat4.perspective(shadowProjectionMatrix, 0.25, shadowViewPortWidth / shadowViewPortHeight, 120.255, 319.287);
 //this is the same as diffuse light source direction.
-mat4.lookAt(shadowViewMatrix, [lightX, lightY, lightZ], [0, 0, 0], [0, 1, 0]);
+mat4.lookAt(shadowViewMatrix, [83.064,1.99,173.467], [0, 0, 0], [0, 1, 0]);
 mat4.multiply(shadowVPMatrix, shadowProjectionMatrix, shadowViewMatrix);
 //change in every frame
 var shadowMVPMatrix = mat4.create();
 
+
+
+//-------------------------------------------------------------------------------------------------------------
+//  normal program set up
+//-------------------------------------------------------------------------------------------------------------
 //create normal program
 var normalProgram = gl.createProgram();
 
@@ -66,6 +88,8 @@ gl.compileShader(fragmentShader);
 var normalFragmentShaderCompiled = gl.getShaderParameter(fragmentShader, gl.COMPILE_STATUS);
 if (!normalFragmentShaderCompiled) {
     console.log("Failed to compile fragment shader");
+    var compilationLog = gl.getShaderInfoLog(fragmentShader);
+    console.log('Shader compiler log: ' + compilationLog);
 }
 
 //attach the shaders to normal program and link program
@@ -81,19 +105,20 @@ if (!gl.getProgramParameter(normalProgram, gl.VALIDATE_STATUS)) {
 //get attribute locations of normal program
 //vertice positions and normal positions
 var n_aVertexPosition = gl.getAttribLocation(normalProgram, "aVertexPosition");
+console.log(n_aVertexPosition);
 var n_aNormal = gl.getAttribLocation(normalProgram, "aNormal");
+console.log(n_aNormal);
 //MVP matrix and normal matrix
-var n_uMVPMatrix = gl.getUniformLocation(normalProgram, "uMVPMatrix");
-var n_uNormalMatrix = gl.getUniformLocation(normalProgram, "uNormalMatrix");
-//light direction and ambient light color
-var n_uLightDir = gl.getUniformLocation(normalProgram, "uLightDir");
-var n_uAmbientLightColor = gl.getUniformLocation(normalProgram, "uAmbientLightColor");
+var n_uObjMPV = gl.getUniformLocation(normalProgram, "uObjMVP");
+var n_uNormalMV = gl.getUniformLocation(normalProgram, "uNormalMV");
 //shadow MVP matrix and shadow map
-var n_uShadowMVPMatrix = gl.getUniformLocation(normalProgram, "uShadowMVPMatrix");
+var n_uShadowMVP = gl.getUniformLocation(normalProgram, "uShadowMVP");
 var n_uShadowMap = gl.getUniformLocation(normalProgram, "uShadowMap");
-//object color
-var n_uColor = gl.getUniformLocation(normalProgram, "uColor");
 
+
+//-------------------------------------------------------------------------------------------------------------
+//  shadow program set up
+//-------------------------------------------------------------------------------------------------------------
 //create shadow program
 var shadowProgram = gl.createProgram();
 
@@ -131,35 +156,27 @@ if (!gl.getProgramParameter(normalProgram, gl.VALIDATE_STATUS)) {
 
 //get attribute location of shadow program
 var s_aVertexPosition = gl.getAttribLocation(shadowProgram, "aVertexPosition");
-var s_uMVPMatrix = gl.getUniformLocation(shadowProgram, "uMVPMatrix");
+console.log(s_aVertexPosition);
+var s_uObjMVP = gl.getUniformLocation(shadowProgram, "uObjMVP");
 
+
+
+//-------------------------------------------------------------------------------------------------------------
+//  model data set up
+//-------------------------------------------------------------------------------------------------------------
 //introduce the vertices, normals and indices of the model, in this case its a cube.
+var loader = new OBJDoc();
+var dataStr = document.querySelector("#model").text;
+loader.parse(dataStr, 2.5);
+var data = loader.getDrawingInfo();
 //Float32 corresponds to gl.FLOAT
-var mysteriousObjectVertices = new Float32Array([
-    1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0,
-    1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0,
-    1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0,
-    -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0,
-    -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0,
-    1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0]);
+var mysteriousObjectVertices = data.TorusKnot.vertices;
 
 //Float32 corresponds to gl.FLOAT
-var mysteriousObjectNormals = new Float32Array([
-    0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0,
-    1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0,
-    0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0,
-    -1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 0.0, 0.0,
-    0.0, -1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 0.0,
-    0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0]);
+var mysteriousObjectNormals = data.TorusKnot.normals;
 
 //Uint16Array correspond to gl.UNSIGNED_SHORT
-var mysteriousObjectIndices = new Uint16Array([
-    0, 1, 2, 0, 2, 3,
-    4, 5, 6, 4, 6, 7,
-    8, 9, 10, 8, 10, 11,
-    12, 13, 14, 12, 14, 15,
-    16, 17, 18, 16, 18, 19,
-    20, 21, 22, 20, 22, 23]);
+var mysteriousObjectIndices = data.TorusKnot.indices;
 
 //create vertex buffer
 var m_vertexBuffer = gl.createBuffer();
@@ -178,13 +195,9 @@ gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, mysteriousObjectIndices, gl.STATIC_DRAW);
 gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, null);
 var m_indices_number = mysteriousObjectIndices.length;
 
-var wallVertices = new Float32Array([
-    3.0, -1.7, 2.5, -3.0, -1.7, 2.5, -3.0, -1.7, -2.5, 3.0, -1.7, -2.5
-]);
-var wallNormals = new Float32Array([
-    1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0
-]);
-var wallIndices = new Uint16Array([0, 1, 2, 0, 2, 3]);
+var wallVertices = data.Plane.vertices;
+var wallNormals = data.Plane.normals;
+var wallIndices = data.Plane.indices;
 
 var w_vertexBuffer = gl.createBuffer();
 gl.bindBuffer(gl.ARRAY_BUFFER, w_vertexBuffer);
@@ -194,13 +207,17 @@ var w_normalBuffer = gl.createBuffer();
 gl.bindBuffer(gl.ARRAY_BUFFER, w_normalBuffer);
 gl.bufferData(gl.ARRAY_BUFFER, wallNormals, gl.STATIC_DRAW);
 
-var w_indexBuffer = gl.createBuffer();
-gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, w_indexBuffer);
+var w_elementBuffer = gl.createBuffer();
+gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, w_elementBuffer);
 gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, wallIndices, gl.STATIC_DRAW);
 gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, null);
 var w_indices_number = wallIndices.length;
 
 
+
+//-------------------------------------------------------------------------------------------------------------
+//  shadow frame buffer
+//-------------------------------------------------------------------------------------------------------------
 /*
  by default, the webgl system draws using a color buffer and, when using the hidden surface removal function, a depth buffer.
  The final image is kept in the color buffer. The frame buffer object is an alternative mechanism that I can use instead of a color
@@ -237,13 +254,12 @@ gl.bindTexture(gl.TEXTURE_2D, texture);
  the 8th parameter: the image data. in this case its null, because i am not loading an external image into this texture.
  */
 //todo (1): i need to find an appropriate width and height of this texture, preferably just large enough to provide desired details of shadows.
-gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, viewportWidth, viewportHeight, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
+gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, shadowViewPortWidth, shadowViewPortHeight, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
 //specify how we do min / max filtering.
 //the default value for gl.TEXTURE_MIN_FILTER is gl.NEAREST_MIPMAP_LINEAR. Since I am not using mipmap here i will just change it to gl.LNEAR
-gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
 //linear the default value for gl.TEXTURE_MAG_FILTER, so the following call can be omitted.
-gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
-gl.bindTexture(gl.TEXTURE_2D, null);
+gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
 
 /*
  a render is a texture with a hint - that you won't expect some functionality from them. You only use it when you will never use it
@@ -254,7 +270,7 @@ var depthBuffer = gl.createRenderbuffer();
 gl.bindRenderbuffer(gl.RENDERBUFFER, depthBuffer);
 //second parameter says that this render buffer is used as a depth buffer, and the buffer storage will be configured accordingly.
 //todo: see (1)
-gl.renderbufferStorage(gl.RENDERBUFFER, gl.DEPTH_COMPONENT16, viewportWidth, viewportHeight);
+gl.renderbufferStorage(gl.RENDERBUFFER, gl.DEPTH_COMPONENT16, shadowViewPortWidth, shadowViewPortHeight);
 gl.bindRenderbuffer(gl.RENDERBUFFER, null);
 
 /*
@@ -263,9 +279,6 @@ gl.bindRenderbuffer(gl.RENDERBUFFER, null);
  gl.COLOR_ATTACHMENT0 says I will bind the texture to the attachment point "gl.COLOR_ATTACHMENT0". a frame buffer in webgl has three
  attachment points: COLOR_ATTACHMENT0, DEPTH_ATTACHMENT, and STENCIL_ATTACHMENT. You sort of know which attachment is for what by reading
  their names.
-
- Notice that i have already unbind texture from gl.TEXTURE_2D, so webgl won't be able to infer which texture I want to use from gl.TEXTURE_2D,
- therefore I need to supply the texture as well.
 
  The last argument is mipmapping level, I am not using mipmapping so its 0 (base level)
  */
@@ -280,30 +293,37 @@ if (gl.FRAMEBUFFER_COMPLETE !== shadowFrameBufferStatus)
 
 gl.bindFramebuffer(gl.FRAMEBUFFER, null);
 
-//configure the gl settings
-//set clear color to black.
-gl.clearColor(0, 0, 0, 1);
+//-------------------------------------------------------------------------------------------------------------
+//  render settings
+//-------------------------------------------------------------------------------------------------------------
 //enable depth test, this is necessary for drawing shadows
 gl.enable(gl.DEPTH_TEST);
 //there is no need to draw back faces
 gl.enable(gl.CULL_FACE);
 gl.cullFace(gl.BACK);
 
+
+//-------------------------------------------------------------------------------------------------------------
+//  render shadow map
+//-------------------------------------------------------------------------------------------------------------
 //switch from default color / render buffer to the frame buffer (actually the frame buffers color and render buffer)
 //to see how shadow map is rendered, simply do not switch to shadow frame buffer.
 gl.bindFramebuffer(gl.FRAMEBUFFER, shadowFrameBuffer);
-//todo adjust the view port width / height according to the width and height of frame buffer's color buffer and depth buffer.
-gl.viewport(0, 0, viewportWidth, viewportHeight);
+// //todo adjust the view port width / height according to the width and height of frame buffer's color buffer and depth buffer.
+gl.viewport(0, 0, shadowViewPortWidth, shadowViewPortHeight);
 //clear everything.
+//set clear color to white.
+gl.clearColor(1.0, 1.0, 1.0, 1.0);
 gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 //switch to shadow shaders
 gl.useProgram(shadowProgram);
 //calculate the shadow mvp matrix and upload it
 mat4.multiply(shadowMVPMatrix, shadowVPMatrix, m_modelMatrix);
 //the second argument is transpose, which is always false in webgl
-gl.uniformMatrix4fv(s_uMVPMatrix, false, shadowMVPMatrix);
+gl.uniformMatrix4fv(s_uObjMVP, false, shadowMVPMatrix);
 
-//upload vertex buffer to shadow vertex shader
+// draw the mysterious object
+// upload vertex buffer to shadow vertex shader
 gl.bindBuffer(gl.ARRAY_BUFFER, m_vertexBuffer);
 //the arguments for gl.vertexAttribPointer are: uint index, int size, enum type, bool normalized, long stride, and long offset
 gl.vertexAttribPointer(s_aVertexPosition, 3, gl.FLOAT, false, 0, 0);
@@ -314,50 +334,39 @@ gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, m_elementBuffer);
 //gl.UNSIGNED_SHORT corresponds to Uint16Array
 gl.drawElements(gl.TRIANGLES, m_indices_number, gl.UNSIGNED_SHORT, 0);
 
+
+
+//-------------------------------------------------------------------------------------------------------------
+//  normal rendering
+//-------------------------------------------------------------------------------------------------------------
 //now switch back to default color buffer and depth buffer
 gl.bindFramebuffer(gl.FRAMEBUFFER, null);
 //clear color buffer and depth buffer
+gl.clearColor(0.0, 0.0, 0.0, 1.0);
 gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
-
+gl.viewport(0, 0, viewportWidth, viewportHeight);
 
 //switch to shaders used for normal rendering
 gl.useProgram(normalProgram);
 
-//upload diffuse light direction
-//todo (2): light direction, base color and ambient light color should be static, i need to move them to the head of this file.
-var diffuseLightDirection = vec3.fromValues(lightX, lightY, lightZ);
-vec3.normalize(diffuseLightDirection, diffuseLightDirection);
-gl.uniform3fv(n_uLightDir, diffuseLightDirection);
-
-//upload base color
-//todo: see (2)
-var objectColor = vec4.fromValues(1.0, 1.0, 1.0, 1.0);
-gl.uniform4fv(n_uColor, objectColor);
-
-//upload ambient light color;
-//todo: see (2)
-var uAmbientLightColor = vec3.fromValues(0.3, 0.3, 0.3);
-gl.uniform3fv(n_uAmbientLightColor, uAmbientLightColor);
-
 //upload shadow mvp matrix
-gl.uniformMatrix4fv(n_uShadowMVPMatrix, false, shadowMVPMatrix);
+gl.uniformMatrix4fv(n_uShadowMVP, false, shadowMVPMatrix);
 //upload shadow map
-//gl.TEXTURE_2D is linked to gl.TEXTURE0
-gl.bindTexture(gl.TEXTURE_2D, texture);
-//link gl.TEXTURE0 (by specifying 0 as the second argument) to n_uShadowMap
+//link the texture2D of gl.TEXTURE0 (by specifying 0 as the second argument) to n_uShadowMap
 gl.uniform1i(n_uShadowMap, 0);
 
 //calculate mvp matrix
 mat4.multiply(MVPMatrix, VPMatrix, m_modelMatrix);
 //upload mvp matrix
-gl.uniformMatrix4fv(n_uMVPMatrix, false, MVPMatrix);
+gl.uniformMatrix4fv(n_uObjMPV, false, MVPMatrix);
 
 //calculate normal matrix and upload it
 mat4.multiply(MVMatrix, viewMatrix, m_modelMatrix);
 mat3.normalFromMat4(normalMatrix, MVMatrix);
-gl.uniformMatrix3fv(n_uNormalMatrix, false, normalMatrix);
+gl.uniformMatrix3fv(n_uNormalMV, false, normalMatrix);
 
-//upload vertex buffer
+// draw the mysterious object
+// upload vertex buffer
 gl.bindBuffer(gl.ARRAY_BUFFER, m_vertexBuffer);
 gl.vertexAttribPointer(n_aVertexPosition, 3, gl.FLOAT, false, 0, 0);
 //will need to manually enable a attribute array
@@ -367,11 +376,25 @@ gl.enableVertexAttribArray(n_aVertexPosition);
 gl.bindBuffer(gl.ARRAY_BUFFER, m_normalsBuffer);
 gl.vertexAttribPointer(n_aNormal, 3, gl.FLOAT, false, 0, 0);
 gl.enableVertexAttribArray(n_aNormal);
-//done, unbind.
-gl.bindBuffer(gl.ARRAY_BUFFER, null);
 
 //bind the element buffer and draw
 gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, m_elementBuffer);
 gl.drawElements(gl.TRIANGLES, m_indices_number, gl.UNSIGNED_SHORT, 0);
+
+
+
+//draw the wall
+// gl.bindBuffer(gl.ARRAY_BUFFER, w_vertexBuffer);
+// gl.vertexAttribPointer(n_aVertexPosition, 3, gl.FLOAT, false, 0, 0);
+// gl.enableVertexAttribArray(n_aVertexPosition);
+
+// gl.bindBuffer(gl.ARRAY_BUFFER, w_normalBuffer);
+// gl.vertexAttribPointer(n_aNormal, 3, gl.FLOAT, false, 0, 0);
+// gl.enableVertexAttribArray(n_aNormal);
+
+// gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, w_elementBuffer);
+// gl.drawElements(gl.TRIANGLES, w_indices_number, gl.UNSIGNED_SHORT, 0);
+
+
 
 
