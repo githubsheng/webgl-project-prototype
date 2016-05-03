@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+        <style>
+            #container {
+                position: relative;
+                margin-top: 100px;
+            }
+
+            * {
+                cursor: url("materials/hand.png"), pointer;
+            }
+
+            #canvas, #gui {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            #menu {
+                margin: 100px auto 0 auto;
+                width: 600px;
+            }
+
+            #main, #back-to-game-button, #about, #between-level {
+                display: none;
+            }
+
+            .noSelect {
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            .btn {
+                color: white;
+                font-size: 2em;
+                text-align: center;
+                text-shadow: 1px 1px 1px black;
+                margin-bottom: 1em;
+            }
+
+            #menu-open-button {
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: white;
+                padding: 10px;
+                text-shadow: 1px 1px 1px black;
+            }
+
+            #back-to-game-button, #back-from-about-button {
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: white;
+                padding: 10px;
+                text-shadow: 1px 1px 1px black;
+            }
+
+            #success-result, #about-message {
+                position: absolute;
+                top: 60px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 2em;
+                color: white;
+                text-shadow: 1px 1px 1px black;
+            }
+
+            #about-message {
+                font-size: 1.2em;
+                line-height: 1.5em;
+            }
+
+            #next-level-button {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                color: white;
+                padding: 10px;
+                text-shadow: 1px 1px 1px black;
+            }
+        </style>
+        <link rel="stylesheet" href="libs/font-awesome-4.5.0/css/font-awesome.min.css"/>
+    </head>
+    <body>
+        <div id="container">
+            <canvas id="canvas"></canvas>
+            <div id="gui">
+                <div id="menu-open-button" class="noSelect">
+                    <i class="fa fa-bars fa-3x"></i>
+                </div>
+                <div id="menu">
+                    <div id="main">
+                        <div id="back-to-game-button" class="noSelect">
+                            <i class="fa fa-times fa-3x"></i>
+                        </div>
+                        <div id="main-buttons">
+                            <div id="continue-button" class="btn noSelect">continue</div>
+                            <div id="choose-level" class="btn noSelect">choose level</div>
+                            <div id="about-button" class="btn noSelect">about</div>
+                        </div>
+                    </div>
+                    <div id="about">
+                        <div id="back-from-about-button" class="noSelect">
+                            <i class="fa fa-arrow-left fa-3x"></i>
+                        </div>
+                        <div id="about-message" class="noSelect">
+                            From the makers of Font Awesome, Fonticons is a subscription service for
+                            website creators that lets you access tons of great icon sets, upload your own custom icons,
+                            and serve up just the icons your site needs from our global CDN.
+                        </div>
+                    </div>
+                </div>
+                <div id="between-level">
+                    <div id="success-result" class="noSelect">teapot</div>
+                    <div id="next-level-button" class="noSelect">
+                        <i class="fa fa-arrow-right fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Stats-output"></div>
+
+        <script type="text/javascript" src="libs/jquery.js"></script>
+        <script type="text/javascript" src="libs/stats.js"></script>
+        <script type="text/javascript" src="libs/gl-matrix.js"></script>
+        <script type="text/javascript" src="libs/webgl-debug.js"></script>
+        <script type="text/javascript" src="obj.js"></script>
+        <script type="text/javascript" src="level.js"></script>
+        <script type="text/javascript" src="menu.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

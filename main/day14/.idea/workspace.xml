@@ -1,0 +1,1672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7cc1a4ac-66cc-4fa7-8957-d51f28ca7d39" name="Default" comment="" />
+    <ignored path="day02.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="day02" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="366" column="61" selection-start-line="366" selection-start-column="61" selection-end-line="366" selection-end-column="61" />
+              <folding>
+                <element signature="e#116#138#0" expanded="false" />
+                <element signature="e#369#480#0" expanded="false" />
+                <element signature="e#741#755#0" expanded="false" />
+                <element signature="e#2154#2265#0" expanded="false" />
+                <element signature="e#2577#2589#0" expanded="false" />
+                <element signature="n#!!block;n#createProgram#0" expanded="false" />
+                <element signature="e#3810#4019#0" expanded="false" />
+                <element signature="e#4424#4639#0" expanded="false" />
+                <element signature="e#4856#4957#0" expanded="false" />
+                <element signature="e#4981#5092#0" expanded="false" />
+                <element signature="n#!!block;n#createNormalProgram#0" expanded="false" />
+                <element signature="e#5766#5809#0" expanded="false" />
+                <element signature="e#7245#7329#0" expanded="false" />
+                <element signature="e#7400#7511#0" expanded="false" />
+                <element signature="n#!!block;n#createShadowProgram#0" expanded="false" />
+                <element signature="e#8194#8305#0" expanded="false" />
+                <element signature="n#!!block;n#createWallProgram#0" expanded="false" />
+                <element signature="e#8998#9109#0" expanded="false" />
+                <element signature="n#!!block;n#createBackgroundProgram#0" expanded="false" />
+                <element signature="e#9800#9911#0" expanded="false" />
+                <element signature="n#!!block;n#setupBuffers#0" expanded="false" />
+                <element signature="e#10737#10764#0" expanded="false" />
+                <element signature="e#11074#11125#0" expanded="false" />
+                <element signature="e#13588#13843#0" expanded="false" />
+                <element signature="e#13598#13660#0" expanded="false" />
+                <element signature="e#14511#14622#0" expanded="false" />
+                <element signature="e#14759#15210#0" expanded="false" />
+                <element signature="e#15633#16699#0" expanded="false" />
+                <element signature="e#16829#16869#0" expanded="false" />
+                <element signature="e#17167#17562#0" expanded="false" />
+                <element signature="e#17962#18428#0" expanded="false" />
+                <element signature="e#19064#19175#0" expanded="false" />
+                <element signature="n#!!block;n#setupBackgroundTexture#0" expanded="false" />
+                <element signature="e#19707#19818#0" expanded="false" />
+                <element signature="n#!!block;n#renderShadowMapf#0" expanded="false" />
+                <element signature="e#20184#20213#0" expanded="false" />
+                <element signature="n#!!block;n#renderShadowMapr#0" expanded="false" />
+                <element signature="e#21419#21448#0" expanded="false" />
+                <element signature="e#22288#22399#0" expanded="false" />
+                <element signature="n#!!block;n#renderBackgroundf#0" expanded="false" />
+                <element signature="n#!!block;n#renderBackgroundr#0" expanded="false" />
+                <element signature="e#23434#23545#0" expanded="false" />
+                <element signature="n#!!block;n#renderMysteriousObjectf#0" expanded="false" />
+                <element signature="e#24422#24441#0" expanded="false" />
+                <element signature="e#24692#24721#0" expanded="false" />
+                <element signature="n#!!block;n#renderMysteriousObjectr#0" expanded="false" />
+                <element signature="e#25979#26090#0" expanded="false" />
+                <element signature="n#!!block;n#renderWallf#0" expanded="false" />
+                <element signature="n#!!block;n#renderWallr#0" expanded="false" />
+                <element signature="e#27135#27249#0" expanded="false" />
+                <element signature="e#27178#27247#0" expanded="false" />
+                <element signature="n#!!block;n#play#0" expanded="false" />
+                <element signature="e#27276#27293#0" expanded="false" />
+                <element signature="n#!!block;n#loadShadersAndCreateProgram#0" expanded="false" />
+                <element signature="e#28093#28284#0" expanded="false" />
+                <element signature="e#28164#28278#0" expanded="false" />
+                <element signature="e#28329#28522#0" expanded="false" />
+                <element signature="e#28402#28516#0" expanded="false" />
+                <element signature="n#!!block;n#loadBackgroundImage#0" expanded="false" />
+                <element signature="e#28618#28698#0" expanded="false" />
+                <element signature="n#!!block;n#loadObjModelData#0" expanded="false" />
+                <element signature="e#28815#28887#0" expanded="false" />
+                <element signature="n#!!block;n#initStats#0" expanded="false" />
+                <element signature="n#!!block;n#updateUniformsr#0" expanded="false" />
+                <element signature="e#29261#29704#0" expanded="false" />
+                <element signature="n#!!block;n#updateUnformsf#0" expanded="false" />
+                <element signature="n#!!block;n#enableMouseInteraction#0" expanded="false" />
+                <element signature="n#!!block;n#enableMouseTracking#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+                <element signature="e#30360#30492#0" expanded="false" />
+                <element signature="e#30387#30482#0" expanded="false" />
+                <element signature="n#!!doc;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+                <element signature="n#!!block;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+                <element signature="e#30718#30913#0" expanded="false" />
+                <element signature="e#30970#31011#0" expanded="false" />
+                <element signature="n#!!block;n#drawf#0" expanded="false" />
+                <element signature="n#!!block;n#drawr#0" expanded="false" />
+                <element signature="n#!!doc;n#reference_blur_background#0" expanded="false" />
+                <element signature="n#!!block;n#reference_blur_background#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="p.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/p.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="obj.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/obj.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysObjVertex.glsl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shaders/mysObjVertex.glsl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysObjFrag.glsl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shaders/mysObjFrag.glsl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.28095734">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shadowFrag.glsl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shaders/shadowFrag.glsl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wallFrag.glsl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shaders/wallFrag.glsl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bgFrag.glsl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shaders/bgFrag.glsl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="GLSL Shader" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lala.obj" />
+        <option value="$PROJECT_DIR$/obj.js" />
+        <option value="$PROJECT_DIR$/mysObjVertex.glsl" />
+        <option value="$PROJECT_DIR$/mysObjFrag.glsl" />
+        <option value="$PROJECT_DIR$/mysSpecularVertex.glsl" />
+        <option value="$PROJECT_DIR$/mysSpecVertex.glsl" />
+        <option value="$PROJECT_DIR$/mysSpecFrag.glsl" />
+        <option value="$PROJECT_DIR$/shadowVertex.glsl" />
+        <option value="$PROJECT_DIR$/shadowFrag.glsl" />
+        <option value="$PROJECT_DIR$/wallVertex.glsl" />
+        <option value="$PROJECT_DIR$/wallFrag.glsl" />
+        <option value="$PROJECT_DIR$/bgVertex.glsl" />
+        <option value="$PROJECT_DIR$/bgFrag.glsl" />
+        <option value="$PROJECT_DIR$/blurVertex.glsl" />
+        <option value="$PROJECT_DIR$/verticalBlurFrag.glsl" />
+        <option value="$PROJECT_DIR$/horizontalBlurFrag.glsl" />
+        <option value="$PROJECT_DIR$/shaders/mysSpecFrag.glsl" />
+        <option value="$PROJECT_DIR$/shaders/verticalBlurFrag.glsl" />
+        <option value="$PROJECT_DIR$/shaders/horizontalBlurFrag.glsl" />
+        <option value="$PROJECT_DIR$/shaders/mysSpecVertex.glsl" />
+        <option value="$PROJECT_DIR$/shaders/mysObjVertex.glsl" />
+        <option value="$PROJECT_DIR$/p.html" />
+        <option value="$PROJECT_DIR$/shaders/wallFrag.glsl" />
+        <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/shaders/shadowFrag.glsl" />
+        <option value="$PROJECT_DIR$/shaders/mysObjFrag.glsl" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="757" />
+    <option name="y" value="184" />
+    <option name="width" value="1451" />
+    <option name="height" value="1084" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="day14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="day14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shaders" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="day14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="day14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="materials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="day14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../day15" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="shadowBuff&#9;null&#9;null&#10;rendermys&#9;null&#9;null&#10;renderMys&#9;null&#9;null&#10;tex&#9;null&#9;null" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/materials" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/libs" />
+      <recent name="$PROJECT_DIR$/models" />
+      <recent name="$PROJECT_DIR$/materials" />
+      <recent name="$PROJECT_DIR$/shaders" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",HIDE_INHERITED_FROM_OBJECT,HIDE_INHERITED" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7cc1a4ac-66cc-4fa7-8957-d51f28ca7d39" name="Default" comment="" />
+      <created>1445319103379</created>
+      <option name="number" value="Default" />
+      <updated>1445319103379</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="757" y="184" width="1451" height="1084" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14965035" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329188" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/p.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/mysObjVertex.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/mysObjFrag.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="847" column="0" selection-start-line="847" selection-start-column="0" selection-end-line="848" selection-end-column="55" />
+          <folding>
+            <element signature="e#116#138#0" expanded="false" />
+            <element signature="e#369#480#0" expanded="false" />
+            <element signature="e#741#755#0" expanded="false" />
+            <element signature="e#2154#2265#0" expanded="false" />
+            <element signature="e#2577#2589#0" expanded="false" />
+            <element signature="n#!!block;n#createProgram#0" expanded="false" />
+            <element signature="e#3810#4019#0" expanded="false" />
+            <element signature="e#4424#4639#0" expanded="false" />
+            <element signature="e#4856#4957#0" expanded="false" />
+            <element signature="e#4981#5092#0" expanded="false" />
+            <element signature="n#!!block;n#createNormalProgram#0" expanded="false" />
+            <element signature="e#5766#5809#0" expanded="false" />
+            <element signature="e#7245#7329#0" expanded="false" />
+            <element signature="e#7400#7511#0" expanded="false" />
+            <element signature="n#!!block;n#createShadowProgram#0" expanded="false" />
+            <element signature="e#8194#8305#0" expanded="false" />
+            <element signature="n#!!block;n#createWallProgram#0" expanded="false" />
+            <element signature="e#8998#9109#0" expanded="false" />
+            <element signature="n#!!block;n#createBackgroundProgram#0" expanded="false" />
+            <element signature="e#9800#9911#0" expanded="false" />
+            <element signature="n#!!block;n#setupBuffers#0" expanded="false" />
+            <element signature="e#10737#10764#0" expanded="false" />
+            <element signature="e#11074#11125#0" expanded="false" />
+            <element signature="e#13588#13843#0" expanded="false" />
+            <element signature="e#13598#13660#0" expanded="false" />
+            <element signature="e#14511#14622#0" expanded="false" />
+            <element signature="e#14759#15210#0" expanded="false" />
+            <element signature="e#15633#16699#0" expanded="false" />
+            <element signature="e#16829#16869#0" expanded="false" />
+            <element signature="e#17167#17562#0" expanded="false" />
+            <element signature="e#17962#18428#0" expanded="false" />
+            <element signature="e#19064#19175#0" expanded="false" />
+            <element signature="n#!!block;n#setupBackgroundTexture#0" expanded="false" />
+            <element signature="e#19707#19818#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapf#0" expanded="false" />
+            <element signature="e#20184#20213#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapr#0" expanded="false" />
+            <element signature="e#21419#21448#0" expanded="false" />
+            <element signature="e#22288#22399#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundf#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundr#0" expanded="false" />
+            <element signature="e#23434#23545#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectf#0" expanded="false" />
+            <element signature="e#24422#24441#0" expanded="false" />
+            <element signature="e#24692#24721#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectr#0" expanded="false" />
+            <element signature="e#25979#26090#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallf#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallr#0" expanded="false" />
+            <element signature="e#27135#27249#0" expanded="false" />
+            <element signature="e#27178#27247#0" expanded="false" />
+            <element signature="n#!!block;n#play#0" expanded="false" />
+            <element signature="e#27276#27293#0" expanded="false" />
+            <element signature="n#!!block;n#loadShadersAndCreateProgram#0" expanded="false" />
+            <element signature="e#28093#28284#0" expanded="false" />
+            <element signature="e#28164#28278#0" expanded="false" />
+            <element signature="e#28329#28522#0" expanded="false" />
+            <element signature="e#28402#28516#0" expanded="false" />
+            <element signature="n#!!block;n#loadBackgroundImage#0" expanded="false" />
+            <element signature="e#28618#28698#0" expanded="false" />
+            <element signature="n#!!block;n#loadObjModelData#0" expanded="false" />
+            <element signature="e#28815#28887#0" expanded="false" />
+            <element signature="n#!!block;n#initStats#0" expanded="false" />
+            <element signature="n#!!block;n#updateUniformsr#0" expanded="false" />
+            <element signature="e#29261#29704#0" expanded="false" />
+            <element signature="n#!!block;n#updateUnformsf#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseTracking#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30360#30492#0" expanded="false" />
+            <element signature="e#30387#30482#0" expanded="false" />
+            <element signature="n#!!doc;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30718#30913#0" expanded="false" />
+            <element signature="e#30970#31011#0" expanded="false" />
+            <element signature="n#!!block;n#drawf#0" expanded="false" />
+            <element signature="n#!!block;n#drawr#0" expanded="false" />
+            <element signature="n#!!doc;n#reference_blur_background#0" expanded="false" />
+            <element signature="n#!!block;n#reference_blur_background#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/mysObjVertex.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/mysObjFrag.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#116#138#0" expanded="false" />
+            <element signature="e#369#480#0" expanded="false" />
+            <element signature="e#741#755#0" expanded="false" />
+            <element signature="e#2154#2265#0" expanded="false" />
+            <element signature="e#2577#2589#0" expanded="false" />
+            <element signature="n#!!block;n#createProgram#0" expanded="false" />
+            <element signature="e#3810#4019#0" expanded="false" />
+            <element signature="e#4424#4639#0" expanded="false" />
+            <element signature="e#4856#4957#0" expanded="false" />
+            <element signature="e#4981#5092#0" expanded="false" />
+            <element signature="n#!!block;n#createNormalProgram#0" expanded="false" />
+            <element signature="e#5766#5809#0" expanded="false" />
+            <element signature="e#7245#7329#0" expanded="false" />
+            <element signature="e#7400#7511#0" expanded="false" />
+            <element signature="n#!!block;n#createShadowProgram#0" expanded="false" />
+            <element signature="e#8194#8305#0" expanded="false" />
+            <element signature="n#!!block;n#createWallProgram#0" expanded="false" />
+            <element signature="e#8998#9109#0" expanded="false" />
+            <element signature="n#!!block;n#createBackgroundProgram#0" expanded="false" />
+            <element signature="e#9800#9911#0" expanded="false" />
+            <element signature="n#!!block;n#setupBuffers#0" expanded="false" />
+            <element signature="e#10737#10764#0" expanded="false" />
+            <element signature="e#11074#11125#0" expanded="false" />
+            <element signature="e#13588#13843#0" expanded="false" />
+            <element signature="e#13598#13660#0" expanded="false" />
+            <element signature="e#14511#14622#0" expanded="false" />
+            <element signature="e#14759#15210#0" expanded="false" />
+            <element signature="e#15633#16699#0" expanded="false" />
+            <element signature="e#16829#16869#0" expanded="false" />
+            <element signature="e#17167#17562#0" expanded="false" />
+            <element signature="e#17962#18428#0" expanded="false" />
+            <element signature="e#19064#19175#0" expanded="false" />
+            <element signature="n#!!block;n#setupBackgroundTexture#0" expanded="false" />
+            <element signature="e#19707#19818#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapf#0" expanded="false" />
+            <element signature="e#20184#20213#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapr#0" expanded="false" />
+            <element signature="e#21419#21448#0" expanded="false" />
+            <element signature="e#22288#22399#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundf#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundr#0" expanded="false" />
+            <element signature="e#23434#23545#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectf#0" expanded="false" />
+            <element signature="e#24422#24441#0" expanded="false" />
+            <element signature="e#24692#24721#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectr#0" expanded="false" />
+            <element signature="e#25979#26090#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallf#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallr#0" expanded="false" />
+            <element signature="e#27135#27249#0" expanded="false" />
+            <element signature="e#27178#27247#0" expanded="false" />
+            <element signature="n#!!block;n#play#0" expanded="false" />
+            <element signature="e#27276#27293#0" expanded="false" />
+            <element signature="n#!!block;n#loadShadersAndCreateProgram#0" expanded="false" />
+            <element signature="e#28093#28284#0" expanded="false" />
+            <element signature="e#28164#28278#0" expanded="false" />
+            <element signature="e#28329#28522#0" expanded="false" />
+            <element signature="e#28402#28516#0" expanded="false" />
+            <element signature="n#!!block;n#loadBackgroundImage#0" expanded="false" />
+            <element signature="e#28618#28698#0" expanded="false" />
+            <element signature="n#!!block;n#loadObjModelData#0" expanded="false" />
+            <element signature="e#28815#28887#0" expanded="false" />
+            <element signature="n#!!block;n#initStats#0" expanded="false" />
+            <element signature="n#!!block;n#updateUniformsr#0" expanded="false" />
+            <element signature="e#29261#29704#0" expanded="false" />
+            <element signature="n#!!block;n#updateUnformsf#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseTracking#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30360#30492#0" expanded="false" />
+            <element signature="e#30387#30482#0" expanded="false" />
+            <element signature="n#!!doc;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30718#30913#0" expanded="false" />
+            <element signature="e#30970#31011#0" expanded="false" />
+            <element signature="n#!!block;n#drawf#0" expanded="false" />
+            <element signature="n#!!block;n#drawr#0" expanded="false" />
+            <element signature="n#!!doc;n#reference_blur_background#0" expanded="false" />
+            <element signature="n#!!block;n#reference_blur_background#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/mysObjVertex.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/mysObjFrag.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+          <folding>
+            <element signature="e#116#138#0" expanded="false" />
+            <element signature="e#369#480#0" expanded="false" />
+            <element signature="e#741#755#0" expanded="false" />
+            <element signature="e#2154#2265#0" expanded="false" />
+            <element signature="e#2577#2589#0" expanded="false" />
+            <element signature="n#!!block;n#createProgram#0" expanded="false" />
+            <element signature="e#3810#4019#0" expanded="false" />
+            <element signature="e#4424#4639#0" expanded="false" />
+            <element signature="e#4856#4957#0" expanded="false" />
+            <element signature="e#4981#5092#0" expanded="false" />
+            <element signature="n#!!block;n#createNormalProgram#0" expanded="false" />
+            <element signature="e#5766#5809#0" expanded="false" />
+            <element signature="e#7245#7329#0" expanded="false" />
+            <element signature="e#7400#7511#0" expanded="false" />
+            <element signature="n#!!block;n#createShadowProgram#0" expanded="false" />
+            <element signature="e#8194#8305#0" expanded="false" />
+            <element signature="n#!!block;n#createWallProgram#0" expanded="false" />
+            <element signature="e#8998#9109#0" expanded="false" />
+            <element signature="n#!!block;n#createBackgroundProgram#0" expanded="false" />
+            <element signature="e#9800#9911#0" expanded="false" />
+            <element signature="n#!!block;n#setupBuffers#0" expanded="false" />
+            <element signature="e#10737#10764#0" expanded="false" />
+            <element signature="e#11074#11125#0" expanded="false" />
+            <element signature="e#13588#13843#0" expanded="false" />
+            <element signature="e#13598#13660#0" expanded="false" />
+            <element signature="e#14511#14622#0" expanded="false" />
+            <element signature="e#14759#15210#0" expanded="false" />
+            <element signature="e#15633#16699#0" expanded="false" />
+            <element signature="e#16829#16869#0" expanded="false" />
+            <element signature="e#17167#17562#0" expanded="false" />
+            <element signature="e#17962#18428#0" expanded="false" />
+            <element signature="e#19064#19175#0" expanded="false" />
+            <element signature="n#!!block;n#setupBackgroundTexture#0" expanded="false" />
+            <element signature="e#19707#19818#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapf#0" expanded="false" />
+            <element signature="e#20184#20213#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapr#0" expanded="false" />
+            <element signature="e#21419#21448#0" expanded="false" />
+            <element signature="e#22288#22399#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundf#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundr#0" expanded="false" />
+            <element signature="e#23434#23545#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectf#0" expanded="false" />
+            <element signature="e#24422#24441#0" expanded="false" />
+            <element signature="e#24692#24721#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectr#0" expanded="false" />
+            <element signature="e#25979#26090#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallf#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallr#0" expanded="false" />
+            <element signature="e#27135#27249#0" expanded="false" />
+            <element signature="e#27178#27247#0" expanded="false" />
+            <element signature="n#!!block;n#play#0" expanded="false" />
+            <element signature="e#27276#27293#0" expanded="false" />
+            <element signature="n#!!block;n#loadShadersAndCreateProgram#0" expanded="false" />
+            <element signature="e#28093#28284#0" expanded="false" />
+            <element signature="e#28164#28278#0" expanded="false" />
+            <element signature="e#28329#28522#0" expanded="false" />
+            <element signature="e#28402#28516#0" expanded="false" />
+            <element signature="n#!!block;n#loadBackgroundImage#0" expanded="false" />
+            <element signature="e#28618#28698#0" expanded="false" />
+            <element signature="n#!!block;n#loadObjModelData#0" expanded="false" />
+            <element signature="e#28815#28887#0" expanded="false" />
+            <element signature="n#!!block;n#initStats#0" expanded="false" />
+            <element signature="n#!!block;n#updateUniformsr#0" expanded="false" />
+            <element signature="e#29261#29704#0" expanded="false" />
+            <element signature="n#!!block;n#updateUnformsf#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseTracking#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30360#30492#0" expanded="false" />
+            <element signature="e#30387#30482#0" expanded="false" />
+            <element signature="n#!!doc;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30718#30913#0" expanded="false" />
+            <element signature="e#30970#31011#0" expanded="false" />
+            <element signature="n#!!block;n#drawf#0" expanded="false" />
+            <element signature="n#!!block;n#drawr#0" expanded="false" />
+            <element signature="n#!!doc;n#reference_blur_background#0" expanded="false" />
+            <element signature="n#!!block;n#reference_blur_background#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/stats.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#116#138#0" expanded="false" />
+            <element signature="e#369#480#0" expanded="false" />
+            <element signature="e#741#755#0" expanded="false" />
+            <element signature="e#2154#2265#0" expanded="false" />
+            <element signature="e#2577#2589#0" expanded="false" />
+            <element signature="n#!!block;n#createProgram#0" expanded="false" />
+            <element signature="e#3810#4019#0" expanded="false" />
+            <element signature="e#4424#4639#0" expanded="false" />
+            <element signature="e#4856#4957#0" expanded="false" />
+            <element signature="e#4981#5092#0" expanded="false" />
+            <element signature="n#!!block;n#createNormalProgram#0" expanded="false" />
+            <element signature="e#5766#5809#0" expanded="false" />
+            <element signature="e#7245#7329#0" expanded="false" />
+            <element signature="e#7400#7511#0" expanded="false" />
+            <element signature="n#!!block;n#createShadowProgram#0" expanded="false" />
+            <element signature="e#8194#8305#0" expanded="false" />
+            <element signature="n#!!block;n#createWallProgram#0" expanded="false" />
+            <element signature="e#8998#9109#0" expanded="false" />
+            <element signature="n#!!block;n#createBackgroundProgram#0" expanded="false" />
+            <element signature="e#9800#9911#0" expanded="false" />
+            <element signature="n#!!block;n#setupBuffers#0" expanded="false" />
+            <element signature="e#10737#10764#0" expanded="false" />
+            <element signature="e#11074#11125#0" expanded="false" />
+            <element signature="e#13588#13843#0" expanded="false" />
+            <element signature="e#13598#13660#0" expanded="false" />
+            <element signature="e#14511#14622#0" expanded="false" />
+            <element signature="e#14759#15210#0" expanded="false" />
+            <element signature="e#15633#16699#0" expanded="false" />
+            <element signature="e#16829#16869#0" expanded="false" />
+            <element signature="e#17167#17562#0" expanded="false" />
+            <element signature="e#17962#18428#0" expanded="false" />
+            <element signature="e#19064#19175#0" expanded="false" />
+            <element signature="n#!!block;n#setupBackgroundTexture#0" expanded="false" />
+            <element signature="e#19707#19818#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapf#0" expanded="false" />
+            <element signature="e#20184#20213#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapr#0" expanded="false" />
+            <element signature="e#21419#21448#0" expanded="false" />
+            <element signature="e#22288#22399#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundf#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundr#0" expanded="false" />
+            <element signature="e#23434#23545#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectf#0" expanded="false" />
+            <element signature="e#24422#24441#0" expanded="false" />
+            <element signature="e#24692#24721#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectr#0" expanded="false" />
+            <element signature="e#25979#26090#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallf#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallr#0" expanded="false" />
+            <element signature="e#27135#27249#0" expanded="false" />
+            <element signature="e#27178#27247#0" expanded="false" />
+            <element signature="n#!!block;n#play#0" expanded="false" />
+            <element signature="e#27276#27293#0" expanded="false" />
+            <element signature="n#!!block;n#loadShadersAndCreateProgram#0" expanded="false" />
+            <element signature="e#28093#28284#0" expanded="false" />
+            <element signature="e#28164#28278#0" expanded="false" />
+            <element signature="e#28329#28522#0" expanded="false" />
+            <element signature="e#28402#28516#0" expanded="false" />
+            <element signature="n#!!block;n#loadBackgroundImage#0" expanded="false" />
+            <element signature="e#28618#28698#0" expanded="false" />
+            <element signature="n#!!block;n#loadObjModelData#0" expanded="false" />
+            <element signature="e#28815#28887#0" expanded="false" />
+            <element signature="n#!!block;n#initStats#0" expanded="false" />
+            <element signature="n#!!block;n#updateUniformsr#0" expanded="false" />
+            <element signature="e#29261#29704#0" expanded="false" />
+            <element signature="n#!!block;n#updateUnformsf#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseTracking#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30360#30492#0" expanded="false" />
+            <element signature="e#30387#30482#0" expanded="false" />
+            <element signature="n#!!doc;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30718#30913#0" expanded="false" />
+            <element signature="e#30970#31011#0" expanded="false" />
+            <element signature="n#!!block;n#drawf#0" expanded="false" />
+            <element signature="n#!!block;n#drawr#0" expanded="false" />
+            <element signature="n#!!doc;n#reference_blur_background#0" expanded="false" />
+            <element signature="n#!!block;n#reference_blur_background#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#116#138#0" expanded="false" />
+            <element signature="e#369#480#0" expanded="false" />
+            <element signature="e#741#755#0" expanded="false" />
+            <element signature="e#2154#2265#0" expanded="false" />
+            <element signature="e#2577#2589#0" expanded="false" />
+            <element signature="n#!!block;n#createProgram#0" expanded="false" />
+            <element signature="e#3810#4019#0" expanded="false" />
+            <element signature="e#4424#4639#0" expanded="false" />
+            <element signature="e#4856#4957#0" expanded="false" />
+            <element signature="e#4981#5092#0" expanded="false" />
+            <element signature="n#!!block;n#createNormalProgram#0" expanded="false" />
+            <element signature="e#5766#5809#0" expanded="false" />
+            <element signature="e#7245#7329#0" expanded="false" />
+            <element signature="e#7400#7511#0" expanded="false" />
+            <element signature="n#!!block;n#createShadowProgram#0" expanded="false" />
+            <element signature="e#8194#8305#0" expanded="false" />
+            <element signature="n#!!block;n#createWallProgram#0" expanded="false" />
+            <element signature="e#8998#9109#0" expanded="false" />
+            <element signature="n#!!block;n#createBackgroundProgram#0" expanded="false" />
+            <element signature="e#9800#9911#0" expanded="false" />
+            <element signature="n#!!block;n#setupBuffers#0" expanded="false" />
+            <element signature="e#10737#10764#0" expanded="false" />
+            <element signature="e#11074#11125#0" expanded="false" />
+            <element signature="e#13588#13843#0" expanded="false" />
+            <element signature="e#13598#13660#0" expanded="false" />
+            <element signature="e#14511#14622#0" expanded="false" />
+            <element signature="e#14759#15210#0" expanded="false" />
+            <element signature="e#15633#16699#0" expanded="false" />
+            <element signature="e#16829#16869#0" expanded="false" />
+            <element signature="e#17167#17562#0" expanded="false" />
+            <element signature="e#17962#18428#0" expanded="false" />
+            <element signature="e#19064#19175#0" expanded="false" />
+            <element signature="n#!!block;n#setupBackgroundTexture#0" expanded="false" />
+            <element signature="e#19707#19818#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapf#0" expanded="false" />
+            <element signature="e#20184#20213#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapr#0" expanded="false" />
+            <element signature="e#21419#21448#0" expanded="false" />
+            <element signature="e#22288#22399#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundf#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundr#0" expanded="false" />
+            <element signature="e#23434#23545#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectf#0" expanded="false" />
+            <element signature="e#24422#24441#0" expanded="false" />
+            <element signature="e#24692#24721#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectr#0" expanded="false" />
+            <element signature="e#25979#26090#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallf#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallr#0" expanded="false" />
+            <element signature="e#27135#27249#0" expanded="false" />
+            <element signature="e#27178#27247#0" expanded="false" />
+            <element signature="n#!!block;n#play#0" expanded="false" />
+            <element signature="e#27276#27293#0" expanded="false" />
+            <element signature="n#!!block;n#loadShadersAndCreateProgram#0" expanded="false" />
+            <element signature="e#28093#28284#0" expanded="false" />
+            <element signature="e#28164#28278#0" expanded="false" />
+            <element signature="e#28329#28522#0" expanded="false" />
+            <element signature="e#28402#28516#0" expanded="false" />
+            <element signature="n#!!block;n#loadBackgroundImage#0" expanded="false" />
+            <element signature="e#28618#28698#0" expanded="false" />
+            <element signature="n#!!block;n#loadObjModelData#0" expanded="false" />
+            <element signature="e#28815#28887#0" expanded="false" />
+            <element signature="n#!!block;n#initStats#0" expanded="false" />
+            <element signature="n#!!block;n#updateUniformsr#0" expanded="false" />
+            <element signature="e#29261#29704#0" expanded="false" />
+            <element signature="n#!!block;n#updateUnformsf#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseTracking#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30360#30492#0" expanded="false" />
+            <element signature="e#30387#30482#0" expanded="false" />
+            <element signature="n#!!doc;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30718#30913#0" expanded="false" />
+            <element signature="e#30970#31011#0" expanded="false" />
+            <element signature="n#!!block;n#drawf#0" expanded="false" />
+            <element signature="n#!!block;n#drawr#0" expanded="false" />
+            <element signature="n#!!doc;n#reference_blur_background#0" expanded="false" />
+            <element signature="n#!!block;n#reference_blur_background#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="337" column="36" selection-start-line="337" selection-start-column="36" selection-end-line="337" selection-end-column="36" />
+          <folding>
+            <element signature="e#116#138#0" expanded="false" />
+            <element signature="e#369#480#0" expanded="false" />
+            <element signature="e#741#755#0" expanded="false" />
+            <element signature="e#2154#2265#0" expanded="false" />
+            <element signature="e#2577#2589#0" expanded="false" />
+            <element signature="n#!!block;n#createProgram#0" expanded="false" />
+            <element signature="e#3810#4019#0" expanded="false" />
+            <element signature="e#4424#4639#0" expanded="false" />
+            <element signature="e#4856#4957#0" expanded="false" />
+            <element signature="e#4981#5092#0" expanded="false" />
+            <element signature="n#!!block;n#createNormalProgram#0" expanded="false" />
+            <element signature="e#5766#5809#0" expanded="false" />
+            <element signature="e#7245#7329#0" expanded="false" />
+            <element signature="e#7400#7511#0" expanded="false" />
+            <element signature="n#!!block;n#createShadowProgram#0" expanded="false" />
+            <element signature="e#8194#8305#0" expanded="false" />
+            <element signature="n#!!block;n#createWallProgram#0" expanded="false" />
+            <element signature="e#8998#9109#0" expanded="false" />
+            <element signature="n#!!block;n#createBackgroundProgram#0" expanded="false" />
+            <element signature="e#9800#9911#0" expanded="false" />
+            <element signature="n#!!block;n#setupBuffers#0" expanded="false" />
+            <element signature="e#10737#10764#0" expanded="false" />
+            <element signature="e#11074#11125#0" expanded="false" />
+            <element signature="e#13588#13843#0" expanded="false" />
+            <element signature="e#13598#13660#0" expanded="false" />
+            <element signature="e#14511#14622#0" expanded="false" />
+            <element signature="e#14759#15210#0" expanded="false" />
+            <element signature="e#15633#16699#0" expanded="false" />
+            <element signature="e#16829#16869#0" expanded="false" />
+            <element signature="e#17167#17562#0" expanded="false" />
+            <element signature="e#17962#18428#0" expanded="false" />
+            <element signature="e#19064#19175#0" expanded="false" />
+            <element signature="n#!!block;n#setupBackgroundTexture#0" expanded="false" />
+            <element signature="e#19707#19818#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapf#0" expanded="false" />
+            <element signature="e#20184#20213#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapr#0" expanded="false" />
+            <element signature="e#21419#21448#0" expanded="false" />
+            <element signature="e#22288#22399#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundf#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundr#0" expanded="false" />
+            <element signature="e#23434#23545#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectf#0" expanded="false" />
+            <element signature="e#24422#24441#0" expanded="false" />
+            <element signature="e#24692#24721#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectr#0" expanded="false" />
+            <element signature="e#25979#26090#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallf#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallr#0" expanded="false" />
+            <element signature="e#27135#27249#0" expanded="false" />
+            <element signature="e#27178#27247#0" expanded="false" />
+            <element signature="n#!!block;n#play#0" expanded="false" />
+            <element signature="e#27276#27293#0" expanded="false" />
+            <element signature="n#!!block;n#loadShadersAndCreateProgram#0" expanded="false" />
+            <element signature="e#28093#28284#0" expanded="false" />
+            <element signature="e#28164#28278#0" expanded="false" />
+            <element signature="e#28329#28522#0" expanded="false" />
+            <element signature="e#28402#28516#0" expanded="false" />
+            <element signature="n#!!block;n#loadBackgroundImage#0" expanded="false" />
+            <element signature="e#28618#28698#0" expanded="false" />
+            <element signature="n#!!block;n#loadObjModelData#0" expanded="false" />
+            <element signature="e#28815#28887#0" expanded="false" />
+            <element signature="n#!!block;n#initStats#0" expanded="false" />
+            <element signature="n#!!block;n#updateUniformsr#0" expanded="false" />
+            <element signature="e#29261#29704#0" expanded="false" />
+            <element signature="n#!!block;n#updateUnformsf#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseTracking#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30360#30492#0" expanded="false" />
+            <element signature="e#30387#30482#0" expanded="false" />
+            <element signature="n#!!doc;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30718#30913#0" expanded="false" />
+            <element signature="e#30970#31011#0" expanded="false" />
+            <element signature="n#!!block;n#drawf#0" expanded="false" />
+            <element signature="n#!!block;n#drawr#0" expanded="false" />
+            <element signature="n#!!doc;n#reference_blur_background#0" expanded="false" />
+            <element signature="n#!!block;n#reference_blur_background#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="564" column="24" selection-start-line="564" selection-start-column="24" selection-end-line="564" selection-end-column="24" />
+          <folding>
+            <element signature="e#116#138#0" expanded="false" />
+            <element signature="e#369#480#0" expanded="false" />
+            <element signature="e#741#755#0" expanded="false" />
+            <element signature="e#2154#2265#0" expanded="false" />
+            <element signature="e#2577#2589#0" expanded="false" />
+            <element signature="n#!!block;n#createProgram#0" expanded="false" />
+            <element signature="e#3810#4019#0" expanded="false" />
+            <element signature="e#4424#4639#0" expanded="false" />
+            <element signature="e#4856#4957#0" expanded="false" />
+            <element signature="e#4981#5092#0" expanded="false" />
+            <element signature="n#!!block;n#createNormalProgram#0" expanded="false" />
+            <element signature="e#5766#5809#0" expanded="false" />
+            <element signature="e#7245#7329#0" expanded="false" />
+            <element signature="e#7400#7511#0" expanded="false" />
+            <element signature="n#!!block;n#createShadowProgram#0" expanded="false" />
+            <element signature="e#8194#8305#0" expanded="false" />
+            <element signature="n#!!block;n#createWallProgram#0" expanded="false" />
+            <element signature="e#8998#9109#0" expanded="false" />
+            <element signature="n#!!block;n#createBackgroundProgram#0" expanded="false" />
+            <element signature="e#9800#9911#0" expanded="false" />
+            <element signature="n#!!block;n#setupBuffers#0" expanded="false" />
+            <element signature="e#10737#10764#0" expanded="false" />
+            <element signature="e#11074#11125#0" expanded="false" />
+            <element signature="e#13588#13843#0" expanded="false" />
+            <element signature="e#13598#13660#0" expanded="false" />
+            <element signature="e#14511#14622#0" expanded="false" />
+            <element signature="e#14759#15210#0" expanded="false" />
+            <element signature="e#15633#16699#0" expanded="false" />
+            <element signature="e#16829#16869#0" expanded="false" />
+            <element signature="e#17167#17562#0" expanded="false" />
+            <element signature="e#17962#18428#0" expanded="false" />
+            <element signature="e#19064#19175#0" expanded="false" />
+            <element signature="n#!!block;n#setupBackgroundTexture#0" expanded="false" />
+            <element signature="e#19707#19818#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapf#0" expanded="false" />
+            <element signature="e#20184#20213#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapr#0" expanded="false" />
+            <element signature="e#21419#21448#0" expanded="false" />
+            <element signature="e#22288#22399#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundf#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundr#0" expanded="false" />
+            <element signature="e#23434#23545#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectf#0" expanded="false" />
+            <element signature="e#24422#24441#0" expanded="false" />
+            <element signature="e#24692#24721#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectr#0" expanded="false" />
+            <element signature="e#25979#26090#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallf#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallr#0" expanded="false" />
+            <element signature="e#27135#27249#0" expanded="false" />
+            <element signature="e#27178#27247#0" expanded="false" />
+            <element signature="n#!!block;n#play#0" expanded="false" />
+            <element signature="e#27276#27293#0" expanded="false" />
+            <element signature="n#!!block;n#loadShadersAndCreateProgram#0" expanded="false" />
+            <element signature="e#28093#28284#0" expanded="false" />
+            <element signature="e#28164#28278#0" expanded="false" />
+            <element signature="e#28329#28522#0" expanded="false" />
+            <element signature="e#28402#28516#0" expanded="false" />
+            <element signature="n#!!block;n#loadBackgroundImage#0" expanded="false" />
+            <element signature="e#28618#28698#0" expanded="false" />
+            <element signature="n#!!block;n#loadObjModelData#0" expanded="false" />
+            <element signature="e#28815#28887#0" expanded="false" />
+            <element signature="n#!!block;n#initStats#0" expanded="false" />
+            <element signature="n#!!block;n#updateUniformsr#0" expanded="false" />
+            <element signature="e#29261#29704#0" expanded="false" />
+            <element signature="n#!!block;n#updateUnformsf#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseTracking#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30360#30492#0" expanded="false" />
+            <element signature="e#30387#30482#0" expanded="false" />
+            <element signature="n#!!doc;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30718#30913#0" expanded="false" />
+            <element signature="e#30970#31011#0" expanded="false" />
+            <element signature="n#!!block;n#drawf#0" expanded="false" />
+            <element signature="n#!!block;n#drawr#0" expanded="false" />
+            <element signature="n#!!doc;n#reference_blur_background#0" expanded="false" />
+            <element signature="n#!!block;n#reference_blur_background#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#116#138#0" expanded="false" />
+            <element signature="e#369#480#0" expanded="false" />
+            <element signature="e#741#755#0" expanded="false" />
+            <element signature="e#2154#2265#0" expanded="false" />
+            <element signature="e#2577#2589#0" expanded="false" />
+            <element signature="n#!!block;n#createProgram#0" expanded="false" />
+            <element signature="e#3810#4019#0" expanded="false" />
+            <element signature="e#4424#4639#0" expanded="false" />
+            <element signature="e#4856#4957#0" expanded="false" />
+            <element signature="e#4981#5092#0" expanded="false" />
+            <element signature="n#!!block;n#createNormalProgram#0" expanded="false" />
+            <element signature="e#5766#5809#0" expanded="false" />
+            <element signature="e#7245#7329#0" expanded="false" />
+            <element signature="e#7400#7511#0" expanded="false" />
+            <element signature="n#!!block;n#createShadowProgram#0" expanded="false" />
+            <element signature="e#8194#8305#0" expanded="false" />
+            <element signature="n#!!block;n#createWallProgram#0" expanded="false" />
+            <element signature="e#8998#9109#0" expanded="false" />
+            <element signature="n#!!block;n#createBackgroundProgram#0" expanded="false" />
+            <element signature="e#9800#9911#0" expanded="false" />
+            <element signature="n#!!block;n#setupBuffers#0" expanded="false" />
+            <element signature="e#10737#10764#0" expanded="false" />
+            <element signature="e#11074#11125#0" expanded="false" />
+            <element signature="e#13588#13843#0" expanded="false" />
+            <element signature="e#13598#13660#0" expanded="false" />
+            <element signature="e#14511#14622#0" expanded="false" />
+            <element signature="e#14759#15210#0" expanded="false" />
+            <element signature="e#15633#16699#0" expanded="false" />
+            <element signature="e#16829#16869#0" expanded="false" />
+            <element signature="e#17167#17562#0" expanded="false" />
+            <element signature="e#17962#18428#0" expanded="false" />
+            <element signature="e#19064#19175#0" expanded="false" />
+            <element signature="n#!!block;n#setupBackgroundTexture#0" expanded="false" />
+            <element signature="e#19707#19818#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapf#0" expanded="false" />
+            <element signature="e#20184#20213#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapr#0" expanded="false" />
+            <element signature="e#21419#21448#0" expanded="false" />
+            <element signature="e#22288#22399#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundf#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundr#0" expanded="false" />
+            <element signature="e#23434#23545#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectf#0" expanded="false" />
+            <element signature="e#24422#24441#0" expanded="false" />
+            <element signature="e#24692#24721#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectr#0" expanded="false" />
+            <element signature="e#25979#26090#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallf#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallr#0" expanded="false" />
+            <element signature="e#27135#27249#0" expanded="false" />
+            <element signature="e#27178#27247#0" expanded="false" />
+            <element signature="n#!!block;n#play#0" expanded="false" />
+            <element signature="e#27276#27293#0" expanded="false" />
+            <element signature="n#!!block;n#loadShadersAndCreateProgram#0" expanded="false" />
+            <element signature="e#28093#28284#0" expanded="false" />
+            <element signature="e#28164#28278#0" expanded="false" />
+            <element signature="e#28329#28522#0" expanded="false" />
+            <element signature="e#28402#28516#0" expanded="false" />
+            <element signature="n#!!block;n#loadBackgroundImage#0" expanded="false" />
+            <element signature="e#28618#28698#0" expanded="false" />
+            <element signature="n#!!block;n#loadObjModelData#0" expanded="false" />
+            <element signature="e#28815#28887#0" expanded="false" />
+            <element signature="n#!!block;n#initStats#0" expanded="false" />
+            <element signature="n#!!block;n#updateUniformsr#0" expanded="false" />
+            <element signature="e#29261#29704#0" expanded="false" />
+            <element signature="n#!!block;n#updateUnformsf#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseTracking#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30360#30492#0" expanded="false" />
+            <element signature="e#30387#30482#0" expanded="false" />
+            <element signature="n#!!doc;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30718#30913#0" expanded="false" />
+            <element signature="e#30970#31011#0" expanded="false" />
+            <element signature="n#!!block;n#drawf#0" expanded="false" />
+            <element signature="n#!!block;n#drawr#0" expanded="false" />
+            <element signature="n#!!doc;n#reference_blur_background#0" expanded="false" />
+            <element signature="n#!!block;n#reference_blur_background#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#116#138#0" expanded="false" />
+            <element signature="e#369#480#0" expanded="false" />
+            <element signature="e#741#755#0" expanded="false" />
+            <element signature="e#2154#2265#0" expanded="false" />
+            <element signature="e#2577#2589#0" expanded="false" />
+            <element signature="n#!!block;n#createProgram#0" expanded="false" />
+            <element signature="e#3810#4019#0" expanded="false" />
+            <element signature="e#4424#4639#0" expanded="false" />
+            <element signature="e#4856#4957#0" expanded="false" />
+            <element signature="e#4981#5092#0" expanded="false" />
+            <element signature="n#!!block;n#createNormalProgram#0" expanded="false" />
+            <element signature="e#5766#5809#0" expanded="false" />
+            <element signature="e#7245#7329#0" expanded="false" />
+            <element signature="e#7400#7511#0" expanded="false" />
+            <element signature="n#!!block;n#createShadowProgram#0" expanded="false" />
+            <element signature="e#8194#8305#0" expanded="false" />
+            <element signature="n#!!block;n#createWallProgram#0" expanded="false" />
+            <element signature="e#8998#9109#0" expanded="false" />
+            <element signature="n#!!block;n#createBackgroundProgram#0" expanded="false" />
+            <element signature="e#9800#9911#0" expanded="false" />
+            <element signature="n#!!block;n#setupBuffers#0" expanded="false" />
+            <element signature="e#10737#10764#0" expanded="false" />
+            <element signature="e#11074#11125#0" expanded="false" />
+            <element signature="e#13588#13843#0" expanded="false" />
+            <element signature="e#13598#13660#0" expanded="false" />
+            <element signature="e#14511#14622#0" expanded="false" />
+            <element signature="e#14759#15210#0" expanded="false" />
+            <element signature="e#15633#16699#0" expanded="false" />
+            <element signature="e#16829#16869#0" expanded="false" />
+            <element signature="e#17167#17562#0" expanded="false" />
+            <element signature="e#17962#18428#0" expanded="false" />
+            <element signature="e#19064#19175#0" expanded="false" />
+            <element signature="n#!!block;n#setupBackgroundTexture#0" expanded="false" />
+            <element signature="e#19707#19818#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapf#0" expanded="false" />
+            <element signature="e#20184#20213#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapr#0" expanded="false" />
+            <element signature="e#21419#21448#0" expanded="false" />
+            <element signature="e#22288#22399#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundf#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundr#0" expanded="false" />
+            <element signature="e#23434#23545#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectf#0" expanded="false" />
+            <element signature="e#24422#24441#0" expanded="false" />
+            <element signature="e#24692#24721#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectr#0" expanded="false" />
+            <element signature="e#25979#26090#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallf#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallr#0" expanded="false" />
+            <element signature="e#27135#27249#0" expanded="false" />
+            <element signature="e#27178#27247#0" expanded="false" />
+            <element signature="n#!!block;n#play#0" expanded="false" />
+            <element signature="e#27276#27293#0" expanded="false" />
+            <element signature="n#!!block;n#loadShadersAndCreateProgram#0" expanded="false" />
+            <element signature="e#28093#28284#0" expanded="false" />
+            <element signature="e#28164#28278#0" expanded="false" />
+            <element signature="e#28329#28522#0" expanded="false" />
+            <element signature="e#28402#28516#0" expanded="false" />
+            <element signature="n#!!block;n#loadBackgroundImage#0" expanded="false" />
+            <element signature="e#28618#28698#0" expanded="false" />
+            <element signature="n#!!block;n#loadObjModelData#0" expanded="false" />
+            <element signature="e#28815#28887#0" expanded="false" />
+            <element signature="n#!!block;n#initStats#0" expanded="false" />
+            <element signature="n#!!block;n#updateUniformsr#0" expanded="false" />
+            <element signature="e#29261#29704#0" expanded="false" />
+            <element signature="n#!!block;n#updateUnformsf#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseTracking#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30360#30492#0" expanded="false" />
+            <element signature="e#30387#30482#0" expanded="false" />
+            <element signature="n#!!doc;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30718#30913#0" expanded="false" />
+            <element signature="e#30970#31011#0" expanded="false" />
+            <element signature="n#!!block;n#drawf#0" expanded="false" />
+            <element signature="n#!!block;n#drawr#0" expanded="false" />
+            <element signature="n#!!doc;n#reference_blur_background#0" expanded="false" />
+            <element signature="n#!!block;n#reference_blur_background#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/WebGL.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2295" column="45" selection-start-line="2295" selection-start-column="34" selection-end-line="2295" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3330619">
+          <caret line="1007" column="17" selection-start-line="1007" selection-start-column="0" selection-end-line="1007" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/webgl-debug.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3330844">
+          <caret line="92" column="2" selection-start-line="92" selection-start-column="2" selection-end-line="92" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/stats.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/shadowVertex.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12875536">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/wallVertex.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23175965">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/bgVertex.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20600858">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/gl-matrix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/models.obj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8841202">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/mysObjVertex.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/WebGL.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33238232">
+          <caret line="1207" column="0" selection-start-line="1207" selection-start-column="0" selection-end-line="1207" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/wallFrag.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/bgFrag.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="366" column="61" selection-start-line="366" selection-start-column="61" selection-end-line="366" selection-end-column="61" />
+          <folding>
+            <element signature="e#116#138#0" expanded="false" />
+            <element signature="e#369#480#0" expanded="false" />
+            <element signature="e#741#755#0" expanded="false" />
+            <element signature="e#2154#2265#0" expanded="false" />
+            <element signature="e#2577#2589#0" expanded="false" />
+            <element signature="n#!!block;n#createProgram#0" expanded="false" />
+            <element signature="e#3810#4019#0" expanded="false" />
+            <element signature="e#4424#4639#0" expanded="false" />
+            <element signature="e#4856#4957#0" expanded="false" />
+            <element signature="e#4981#5092#0" expanded="false" />
+            <element signature="n#!!block;n#createNormalProgram#0" expanded="false" />
+            <element signature="e#5766#5809#0" expanded="false" />
+            <element signature="e#7245#7329#0" expanded="false" />
+            <element signature="e#7400#7511#0" expanded="false" />
+            <element signature="n#!!block;n#createShadowProgram#0" expanded="false" />
+            <element signature="e#8194#8305#0" expanded="false" />
+            <element signature="n#!!block;n#createWallProgram#0" expanded="false" />
+            <element signature="e#8998#9109#0" expanded="false" />
+            <element signature="n#!!block;n#createBackgroundProgram#0" expanded="false" />
+            <element signature="e#9800#9911#0" expanded="false" />
+            <element signature="n#!!block;n#setupBuffers#0" expanded="false" />
+            <element signature="e#10737#10764#0" expanded="false" />
+            <element signature="e#11074#11125#0" expanded="false" />
+            <element signature="e#13588#13843#0" expanded="false" />
+            <element signature="e#13598#13660#0" expanded="false" />
+            <element signature="e#14511#14622#0" expanded="false" />
+            <element signature="e#14759#15210#0" expanded="false" />
+            <element signature="e#15633#16699#0" expanded="false" />
+            <element signature="e#16829#16869#0" expanded="false" />
+            <element signature="e#17167#17562#0" expanded="false" />
+            <element signature="e#17962#18428#0" expanded="false" />
+            <element signature="e#19064#19175#0" expanded="false" />
+            <element signature="n#!!block;n#setupBackgroundTexture#0" expanded="false" />
+            <element signature="e#19707#19818#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapf#0" expanded="false" />
+            <element signature="e#20184#20213#0" expanded="false" />
+            <element signature="n#!!block;n#renderShadowMapr#0" expanded="false" />
+            <element signature="e#21419#21448#0" expanded="false" />
+            <element signature="e#22288#22399#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundf#0" expanded="false" />
+            <element signature="n#!!block;n#renderBackgroundr#0" expanded="false" />
+            <element signature="e#23434#23545#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectf#0" expanded="false" />
+            <element signature="e#24422#24441#0" expanded="false" />
+            <element signature="e#24692#24721#0" expanded="false" />
+            <element signature="n#!!block;n#renderMysteriousObjectr#0" expanded="false" />
+            <element signature="e#25979#26090#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallf#0" expanded="false" />
+            <element signature="n#!!block;n#renderWallr#0" expanded="false" />
+            <element signature="e#27135#27249#0" expanded="false" />
+            <element signature="e#27178#27247#0" expanded="false" />
+            <element signature="n#!!block;n#play#0" expanded="false" />
+            <element signature="e#27276#27293#0" expanded="false" />
+            <element signature="n#!!block;n#loadShadersAndCreateProgram#0" expanded="false" />
+            <element signature="e#28093#28284#0" expanded="false" />
+            <element signature="e#28164#28278#0" expanded="false" />
+            <element signature="e#28329#28522#0" expanded="false" />
+            <element signature="e#28402#28516#0" expanded="false" />
+            <element signature="n#!!block;n#loadBackgroundImage#0" expanded="false" />
+            <element signature="e#28618#28698#0" expanded="false" />
+            <element signature="n#!!block;n#loadObjModelData#0" expanded="false" />
+            <element signature="e#28815#28887#0" expanded="false" />
+            <element signature="n#!!block;n#initStats#0" expanded="false" />
+            <element signature="n#!!block;n#updateUniformsr#0" expanded="false" />
+            <element signature="e#29261#29704#0" expanded="false" />
+            <element signature="n#!!block;n#updateUnformsf#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableMouseTracking#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30360#30492#0" expanded="false" />
+            <element signature="e#30387#30482#0" expanded="false" />
+            <element signature="n#!!doc;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="n#!!block;n#enableModelDragging#0;n#!!block;n#enableMouseInteraction#0" expanded="false" />
+            <element signature="e#30718#30913#0" expanded="false" />
+            <element signature="e#30970#31011#0" expanded="false" />
+            <element signature="n#!!block;n#drawf#0" expanded="false" />
+            <element signature="n#!!block;n#drawr#0" expanded="false" />
+            <element signature="n#!!doc;n#reference_blur_background#0" expanded="false" />
+            <element signature="n#!!block;n#reference_blur_background#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/shadowFrag.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/mysObjFrag.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28095734">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
